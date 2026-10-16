@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>Property Advisory | Valuation, Management & Real Estate Advice</title>
+<meta name="description" content="Professional property advisory: valuation, property management, acquisition, development, feasibility appraisals and advisory.">
+<style>
+:root{
+  --navy:#10294a; --blue:#1f4e8c; --gold:#b8892f;
+  --soft:#f4f7fb; --muted:#5a6678; --line:#e4e9f0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:#fff;color:var(--navy);
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.65;
+}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{
+  position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);
+  z-index:10;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{
+  display:flex;align-items:center;gap:12px;text-decoration:none;
+  color:var(--navy);
+}
+.mono{
+  width:40px;height:40px;background:var(--navy);color:#fff;
+  display:grid;place-items:center;font-family:Georgia,serif;
+  font-weight:700;border-bottom:3px solid var(--gold);
+}
+.logo b{font-family:Georgia,serif;font-size:1.05rem;line-height:1.1}
+.logo small{
+  display:block;font-size:.68rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted);
+}
+nav a.l{
+  color:var(--navy);text-decoration:none;margin-left:24px;font-size:.92rem;
+}
+.btn{
+  display:inline-block;padding:14px 28px;background:var(--navy);color:#fff;
+  text-decoration:none;font-weight:600;font-size:.95rem;
+  border:2px solid var(--navy);transition:.2s;
+}
+.btn:hover{background:var(--blue);border-color:var(--blue)}
+.btn.o{background:#fff;color:var(--navy)}
+.btn.o:hover{background:var(--navy);color:#fff}
+.hero{padding:84px 0 72px;position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;right:-90px;top:30px;width:420px;height:420px;
+  border:60px solid var(--soft);border-radius:50%;z-index:0;
+}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:26px}
+.kicker{
+  color:var(--gold);letter-spacing:.28em;text-transform:uppercase;
+  font-size:.78rem;font-weight:700;
+}
+h1{
+  font-family:Georgia,serif;font-weight:400;
+  font-size:clamp(2.3rem,6vw,4.1rem);line-height:1.08;margin:0;max-width:17ch;
+}
+h1 em{color:var(--blue);font-style:normal}
+.lead{color:var(--muted);font-size:1.15rem;max-width:56ch;margin:0}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.stats .wrap{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;
+  padding:18px 22px;color:var(--muted);font-weight:600;font-size:.9rem;
+}
+.stats span::before{
+  content:"";display:inline-block;width:8px;height:8px;
+  background:var(--gold);margin-right:10px;
+}
+section{padding:80px 0}
+.alt{background:var(--soft)}
+.eyebrow{
+  color:var(--gold);letter-spacing:.28em;text-transform:uppercase;
+  font-size:.78rem;font-weight:700;
+}
+h2{
+  font-family:Georgia,serif;font-weight:400;
+  font-size:clamp(1.8rem,4.2vw,2.6rem);margin:10px 0 14px;
+}
+.sub{color:var(--muted);max-width:60ch;margin:0 0 38px}
+.grid{
+  display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+.svc{
+  border:1px solid var(--line);padding:28px;background:#fff;
+  transition:.2s;position:relative;
+}
+.svc:hover{
+  border-color:var(--gold);box-shadow:0 12px 30px rgba(16,41,74,.08);
+  transform:translateY(-3px);
+}
+.svc .n{font-family:Georgia,serif;color:var(--gold);font-size:1.6rem}
+.svc h3{font-family:Georgia,serif;font-weight:400;font-size:1.25rem;margin:6px 0}
+.svc p{margin:0;color:var(--muted);font-size:.95rem}
+.about{display:grid;gap:40px;align-items:center}
+@media(min-width:820px){.about{grid-template-columns:.8fr 1.2fr}}
+.pic{
+  position:relative;max-width:320px;justify-self:center;
+  aspect-ratio:4/5;background:linear-gradient(135deg,var(--navy),var(--blue));
+  border:1px solid var(--line);
+}
+.pic::before{
+  content:"";position:absolute;inset:14px -14px -14px 14px;
+  border:2px solid var(--gold);
+}
+.about p{color:var(--muted);margin:0 0 16px}
+.ticks{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.ticks li{padding-left:28px;position:relative}
+.ticks li::before{
+  content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800;
+}
+.band{
+  background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold);
+  padding:38px 30px;display:grid;gap:14px;
+  box-shadow:0 12px 30px rgba(16,41,74,.06);
+}
+.band h2{margin:0}
+.band p{margin:0;color:var(--muted);max-width:58ch}
+.contact{
+  display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+.card{
+  border:1px solid var(--line);border-top:4px solid var(--navy);
+  padding:26px;background:#fff;
+}
+.card strong{
+  display:block;color:var(--gold);letter-spacing:.14em;
+  text-transform:uppercase;font-size:.78rem;margin-bottom:6px;
+}
+.card a.p{font-family:Georgia,serif;font-size:1.5rem;color:var(--navy);text-decoration:none}
+footer{
+  border-top:1px solid var(--line);padding:30px 22px;text-align:center;
+  color:var(--muted);font-size:.9rem;
+}
+/* Floating demo badge */
+.demo-badge{
+  position:fixed;
+  right:16px;
+  bottom:16px;
+  z-index:99;
+  background:#0f172a;
+  color:#fff;
+  padding:10px 14px;
+  border-radius:999px;
+  font:600 .85rem/1.2 "Segoe UI",Roboto,Arial,sans-serif;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.demo-badge a{
+  color:#25D366;
+  text-decoration:none;
+  font-weight:800;
+}
+.demo-badge a:hover{text-decoration:underline}
+@media(max-width:640px){
+  .demo-badge{right:10px;bottom:10px;font-size:.78rem;padding:9px 12px}
+}
+@media(max-width:640px){
+  nav a.l{display:none}
+  .hero{padding:48px 0}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="mono">PA</span>
+      <span><b>Property Advisory</b><small>Valuation & Real Estate Advice</small></span>
+    </a>
+    <nav>
+      <a class="l" href="#services">Services</a>
+      <a class="l" href="#about">About</a>
+      <a class="l" href="#contact">Contact</a>
+      <a class="btn" href="tel:+2348000000000" style="margin-left:24px;padding:10px 18px">Call</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker">Port Harcourt</div>
+      <h1>Professional advice on <em>every aspect</em> of real estate.</h1>
+      <p class="lead">From valuation and acquisition to development and management, we help you make confident property decisions.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+2348000000000">Call 0800 000 0000</a>
+        <a class="btn o" href="https://wa.me/2348000000000?text=Hello%2C%20I%20would%20like%20a%20property%20advisory%20enquiry." target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="wrap">
+      <span>Valuation</span><span>Property management</span><span>Acquisition</span>
+      <span>Development</span><span>Advisory</span>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="eyebrow">What we do</div>
+      <h2>Our services</h2>
+      <p class="sub">A full range of property services under one roof, delivered with professionalism.</p>
+      <div class="grid">
+        <div class="svc"><div class="n">01</div><h3>Valuation</h3><p>Reliable property valuations you can base important decisions on.</p></div>
+        <div class="svc"><div class="n">02</div><h3>Property & Facility Management</h3><p>Care for your property and facilities so they stay productive and well kept.</p></div>
+        <div class="svc"><div class="n">03</div><h3>Acquisition</h3><p>Guidance on finding and acquiring the right property for your goals.</p></div>
+        <div class="svc"><div class="n">04</div><h3>Property Development</h3><p>Support for taking development projects from idea to completion.</p></div>
+        <div class="svc"><div class="n">05</div><h3>Feasibility & Viability</h3><p>Clear assessments of whether a project makes sense before you commit.</p></div>
+        <div class="svc"><div class="n">06</div><h3>Agency</h3><p>Representation for buying, selling and letting property.</p></div>
+        <div class="svc"><div class="n">07</div><h3>Real Estate Advisory</h3><p>Independent, professional advice tailored to your situation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="alt">
+    <div class="wrap about">
+      <div class="pic" aria-hidden="true"></div>
+      <div>
+        <div class="eyebrow">About the firm</div>
+        <h2>Real estate expertise you can rely on.</h2>
+        <p>We are a property advisory firm based in Port Harcourt. We provide professional services across all aspects of real estate, helping individuals and organisations understand, value and manage their property.</p>
+        <ul class="ticks">
+          <li>Professional services across the full property cycle</li>
+          <li>Clear, honest advice</li>
+          <li>Based in the heart of Port Harcourt</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="band">
+        <div class="eyebrow">Get started</div>
+        <h2>Need a valuation or property advice?</h2>
+        <p>Call us today to talk through your property needs.</p>
+        <div><a class="btn" href="tel:+2348000000000">Speak to us</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2>Visit or call us.</h2>
+      <p class="sub">Our office is in Port Harcourt.</p>
+      <div class="contact">
+        <div class="card"><strong>Phone</strong><a class="p" href="tel:+2348000000000">0800 000 0000</a></div>
+        <div class="card"><strong>Email</strong><a href="mailto:hello@example.com">hello@example.com</a></div>
+        <div class="card"><strong>Office</strong>Port Harcourt, Rivers State, Nigeria</div>
+      </div>
+      <p style="margin-top:26px"><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Port+Harcourt" target="_blank" rel="noopener">Get directions</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr">2026</span> Property Advisory. All rights reserved.</footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+
+<!-- Floating demo badge -->
+<div class="demo-badge">
+  <span>Demo by Fritt</span>
+  <a href="https://wa.me/2349169472000?text=Hi%20Jordan%2C%20I%20saw%20a%20Fritt%20demo%20and%20I%27d%20like%20a%20site%20like%20this." target="_blank" rel="noopener">Hire me →</a>
+</div>
+</body>
+</html>

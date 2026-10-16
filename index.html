@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Fritt | Website Developer in Port Harcourt</title>
+<meta name="description" content="Fritt builds business websites and ecommerce stores for companies in Port Harcourt and remotely. Fixed packages in Naira and GBP.">
+<link rel="canonical" href="https://fritt.org/">
+<meta property="og:title" content="Fritt | Website Developer in Port Harcourt">
+<meta property="og:description" content="Business websites and ecommerce stores. Based in Port Harcourt, working locally and remotely.">
+<meta property="og:url" content="https://fritt.org/">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --navy:#0f2748;--green:#1f7a4d;--gold:#c08a2e;--soft:#f5f8fb;
+  --muted:#5d6b7c;--line:#e3e9f0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--navy);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.02em}
+.logo-mark{width:38px;height:38px;border-radius:10px;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;border-bottom:3px solid var(--gold)}
+.logo small{display:block;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}
+nav a.link{text-decoration:none;margin-left:22px;font-size:.92rem;font-weight:600}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.94rem;border:2px solid var(--green);background:var(--green);color:#fff;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:#fff;color:var(--navy);border-color:var(--navy)}
+.btn.alt:hover{background:var(--navy);color:#fff}
+.btn.small{padding:9px 16px;font-size:.86rem}
+.hero{padding:80px 0 70px;background:radial-gradient(circle at 88% 12%,#eaf3ff 0 220px,transparent 221px),radial-gradient(circle at 8% 85%,#eaf7ef 0 170px,transparent 171px)}
+.hero-grid{display:grid;gap:38px;align-items:center}
+@media(min-width:880px){.hero-grid{grid-template-columns:1.2fr .8fr}}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:.22em;text-transform:uppercase;font-size:.76rem}
+h1{font-size:clamp(2.3rem,5.8vw,4rem);line-height:1.06;letter-spacing:-.03em;margin:14px 0 18px}
+h1 em{font-style:normal;color:var(--green)}
+.lead{font-size:1.12rem;color:var(--muted);max-width:54ch;margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 16px 44px rgba(15,39,72,.08)}
+.hero-card h3{margin:0 0 12px;font-size:1.05rem}
+.hero-card ul{margin:0;padding-left:20px;color:var(--muted);font-size:.94rem}
+.hero-card li{margin:6px 0}
+section{padding:74px 0}
+.soft{background:var(--soft)}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.22em;text-transform:uppercase;font-size:.76rem}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin:10px 0 12px;letter-spacing:-.02em}
+.sub{color:var(--muted);max-width:60ch;margin:0 0 34px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;transition:.2s}
+.card:hover{border-color:var(--green);box-shadow:0 12px 30px rgba(15,39,72,.08);transform:translateY(-3px)}
+.card .icon{font-size:1.7rem}
+.card h3{margin:12px 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.packages{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.package{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;position:relative}
+.package.featured{border-color:var(--green);box-shadow:0 16px 40px rgba(31,122,77,.12)}
+.badge{position:absolute;top:-13px;left:24px;background:var(--green);color:#fff;padding:5px 12px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.price{font-size:1.9rem;font-weight:800;line-height:1.1;margin:12px 0 2px}
+.price span{font-size:.92rem;color:var(--muted);font-weight:600}
+.package ul{padding-left:20px;color:var(--muted);margin:16px 0 22px}
+.package li{margin:7px 0}
+.portfolio{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.project{display:block;text-decoration:none;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:.2s}
+.project:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(15,39,72,.08)}
+.project-top{height:140px;background:linear-gradient(135deg,var(--navy),#1f5fa8);display:grid;place-items:center;color:#fff;font-family:Georgia,serif;font-size:1.35rem}
+.project:nth-child(2) .project-top{background:linear-gradient(135deg,#1f7a4d,#3aa76d)}
+.project:nth-child(3) .project-top{background:linear-gradient(135deg,#8a5a1f,#c08a2e)}
+.project:nth-child(4) .project-top{background:linear-gradient(135deg,#1f3a5f,#0f2748)}
+.project-body{padding:18px}
+.project-body small{display:inline-block;background:#eaf7ef;color:var(--green);padding:4px 10px;border-radius:999px;font-weight:800;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
+.project-body h3{margin:10px 0 6px;font-size:1rem}
+.project-body p{margin:0;color:var(--muted);font-size:.9rem}
+.process{counter-reset:step}
+.step{position:relative;padding:24px 24px 24px 78px;background:#fff;border:1px solid var(--line);border-radius:18px}
+.step::before{counter-increment:step;content:counter(step);position:absolute;left:22px;top:22px;width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800}
+.step h3{margin:0 0 6px;font-size:1.02rem}
+.step p{margin:0;color:var(--muted);font-size:.94rem}
+.faq{display:grid;gap:12px}
+details{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:#fff}
+summary{font-weight:800;cursor:pointer;font-size:.98rem}
+details p{color:var(--muted);margin:10px 0 0;font-size:.94rem}
+.contact{background:var(--navy);color:#fff;border-radius:26px;padding:44px 30px;display:grid;gap:24px}
+@media(min-width:820px){.contact{grid-template-columns:1.2fr .8fr;padding:52px}}
+.contact p{color:rgba(255,255,255,.78);max-width:52ch;font-size:.98rem}
+.contact a.btn{background:var(--gold);border-color:var(--gold);color:#1b1305}
+.contact a.btn.alt{background:transparent;color:#fff;border-color:#fff}
+footer{border-top:1px solid var(--line);padding:28px 22px;color:var(--muted);font-size:.88rem;text-align:center}
+@media(max-width:680px){
+  nav a.link{display:none}
+  .hero{padding:52px 0 56px}
+  section{padding:54px 0}
+}
+.package .addon{
+  font-size:.9rem;
+  color:var(--muted);
+  background:#fff8e6;
+  border:1px solid #f0dfb2;
+  padding:12px 14px;
+  border-radius:12px;
+  margin:0 0 20px;
+}
+.package .addon strong{color:var(--navy)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">F</span>
+      <span><b>Fritt</b><small>Websites by Jordan Sede</small></span>
+    </a>
+    <nav>
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#packages">Packages</a>
+      <a class="link" href="#work">Work</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="btn small" href="https://wa.me/2349169472000?text=Hi%20Fritt%2C%20I%20need%20a%20website." target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Port Harcourt · Local & Remote</div>
+        <h1>Websites that make small businesses look <em>serious.</em></h1>
+        <p class="lead">I’m Jordan, founder of Fritt. I build business websites and ecommerce stores for companies in Port Harcourt and abroad.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/2349169472000?text=Hi%20Fritt%2C%20I%20need%20a%20website." target="_blank" rel="noopener">WhatsApp me SITE</a>
+          <a class="btn alt" href="#packages">See packages</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h3>What you get</h3>
+        <ul>
+          <li>Mobile-friendly design</li>
+          <li>WhatsApp and call buttons</li>
+          <li>Basic SEO setup</li>
+          <li>Google Maps and contact form</li>
+          <li>Training so you can edit content</li>
+          <li>Optional monthly maintenance</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="eyebrow">Services</div>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Business Website</h3>
+          <p>A professional site for a company that needs to look credible, show services, and receive enquiries.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛒</div>
+          <h3>Ecommerce Starter</h3>
+          <p>An online store with products, payments, delivery options, and a simple way to manage orders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="soft">
+    <div class="wrap">
+      <div class="eyebrow">Packages</div>
+      <h2>Pricing</h2>
+      <p class="sub">Fixed starting prices. Final quote depends on pages, products, and features. Naira for Nigeria.</p>
+      <div class="packages">
+        <article class="package">
+          <h3>Business Website</h3>
+          <div class="price">₦250,000</div>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Mobile responsive</li>
+            <li>Contact form + WhatsApp</li>
+            <li>Google Maps + basic SEO</li>
+            <li>1 round of revisions</li>
+            <li>7–10 working days</li>
+            <li>Training so you can edit content yourself</li>
+          </ul>
+          <p class="addon">Optional: monthly maintenance from <strong>₦25,000/month</strong> — updates, backups, security, and small edits.</p>
+          <a class="btn" href="https://wa.me/2349169472000?text=Hi%20Fritt%2C%20I%20want%20the%20Business%20Website%20package." target="_blank" rel="noopener">Start Business Website</a>
+        </article>
+
+        <article class="package featured">
+          <span class="badge">Popular</span>
+          <h3>Ecommerce Starter</h3>
+          <div class="price">₦450,000</div>
+          <ul>
+            <li>Up to 20 products</li>
+            <li>Cart, checkout, payments</li>
+            <li>Delivery options</li>
+            <li>Product management training</li>
+            <li>2 rounds of revisions</li>
+            <li>14–21 working days</li>
+            <li>Training so you can manage orders yourself</li>
+          </ul>
+          <p class="addon">Optional: monthly maintenance from <strong>₦25,000/month</strong> — updates, backups, security, and small edits.</p>
+          <a class="btn" href="https://wa.me/2349169472000?text=Hi%20Fritt%2C%20I%20want%20the%20Ecommerce%20Starter%20package." target="_blank" rel="noopener">Start Ecommerce Store</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="eyebrow">Work</div>
+      <h2>Portfolio</h2>
+      <div class="portfolio">
+        <a class="project" href="https://tracker.fritt.org" target="_blank" rel="noopener">
+          <div class="project-top">Fritt Tracker</div>
+          <div class="project-body">
+            <small>Live product</small>
+            <h3>Fritt Tracker</h3>
+            <p>A live product built under Fritt. Product thinking, UI, and full-stack delivery.</p>
+          </div>
+        </a>
+
+        <a class="project" href="/concepts/property-advisory.html">
+          <div class="project-top">Property Advisory</div>
+          <div class="project-body">
+            <small>Concept build</small>
+            <h3>Property advisory firm</h3>
+            <p>Concept for a Port Harcourt real estate valuer and advisory firm.</p>
+          </div>
+        </a>
+
+        <a class="project" href="/concepts/food-supply.html">
+          <div class="project-top">Food Supply</div>
+          <div class="project-body">
+            <small>Concept build</small>
+            <h3>Foodstuff supply business</h3>
+            <p>Concept for a local food supply company. Clean, warm, enquiry-focused.</p>
+          </div>
+        </a>
+
+        <a class="project" href="/concepts/realty.html">
+          <div class="project-top">Realty</div>
+          <div class="project-body">
+            <small>Concept build</small>
+            <h3>Real estate agency</h3>
+            <p>Concept for a property agency with listings, gallery, and WhatsApp enquiries.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="eyebrow">Process</div>
+      <h2>How it works</h2>
+      <div class="grid process">
+        <div class="step"><h3>Message me</h3><p>Tell me what your business does and what you need the site to do.</p></div>
+        <div class="step"><h3>Scope + price</h3><p>I send a short written scope, timeline, and fixed price.</p></div>
+        <div class="step"><h3>Build + review</h3><p>I build, you review, and we do the agreed revisions.</p></div>
+        <div class="step"><h3>Launch + support</h3><p>I launch the site, train you, and stay available for 30 days.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">FAQ</div>
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details>
+          <summary>What do you build with?</summary>
+          <p>WordPress with Elementor and WooCommerce for business websites and most stores. Shopify for fashion and product brands that prefer it. Custom code for apps.</p>
+        </details>
+        <details>
+          <summary>Can you work remotely?</summary>
+          <p>Yes. I’m based in Port Harcourt and work locally and remotely. UK clients can WhatsApp my Nigerian number for free, and I can receive GBP into a UK account.</p>
+        </details>
+        <details>
+          <summary>How do we start?</summary>
+          <p>WhatsApp me the word <strong>SITE</strong> and tell me what your business does. I’ll reply with the next steps.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>Need a website?</h2>
+          <p>Message me on WhatsApp. Tell me your business type, what you sell, and whether you need a business site or an online store.</p>
+          <div class="cta">
+            <a class="btn" href="https://wa.me/2349169472000?text=Hi%20Fritt%2C%20I%20need%20a%20website." target="_blank" rel="noopener">WhatsApp +234 916 947 2000</a>
+            <a class="btn alt" href="tel:+2349169472000">Call</a>
+          </div>
+        </div>
+        <div>
+          <p><strong>Fritt</strong><br>Founded by Jordan Sede<br>Port Harcourt, Nigeria<br>Working locally and remotely.</p>
+          <p>WhatsApp: +234 916 947 2000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> Fritt. Concept demos are anonymised and not affiliated with any real business.</div>
+</footer>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
