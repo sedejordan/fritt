@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Fritt — business websites and ecommerce stores">
+  <defs>
+    <radialGradient id="glowBlue" cx="1040" cy="70" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#eaf3ff"/>
+      <stop offset="100%" stop-color="#eaf3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGreen" cx="120" cy="570" r="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#eaf7ef"/>
+      <stop offset="100%" stop-color="#eaf7ef" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="mark"><rect x="80" y="64" width="64" height="64" rx="15"/></clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect width="1200" height="630" fill="url(#glowBlue)"/>
+  <rect width="1200" height="630" fill="url(#glowGreen)"/>
+
+  <!-- logo mark -->
+  <rect x="80" y="64" width="64" height="64" rx="15" fill="#0f2748"/>
+  <g clip-path="url(#mark)">
+    <rect x="80" y="121" width="64" height="7" fill="#c08a2e"/>
+  </g>
+  <text x="112" y="108" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="34" fill="#ffffff">F</text>
+
+  <!-- wordmark -->
+  <text x="164" y="101" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="0.5" fill="#0f2748">Fritt</text>
+  <text x="166" y="125" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="3.5" fill="#5d6b7c">WEBSITES BY JORDAN SEDE</text>
+
+  <!-- kicker -->
+  <text x="80" y="254" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="5" fill="#c08a2e">BUSINESS WEBSITES · ECOMMERCE STORES</text>
+
+  <!-- headline -->
+  <text x="80" y="345" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2" fill="#0f2748">Websites that make small</text>
+  <text x="80" y="431" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2" fill="#0f2748">businesses look <tspan fill="#1f7a4d">serious.</tspan></text>
+
+  <!-- feature pills -->
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#5d6b7c">
+    <rect x="80" y="478" width="164" height="42" rx="21" fill="#f5f8fb" stroke="#e3e9f0"/>
+    <text x="162" y="505" text-anchor="middle">Mobile-friendly</text>
+
+    <rect x="256" y="478" width="172" height="42" rx="21" fill="#f5f8fb" stroke="#e3e9f0"/>
+    <text x="342" y="505" text-anchor="middle">WhatsApp-ready</text>
+
+    <rect x="440" y="478" width="140" height="42" rx="21" fill="#f5f8fb" stroke="#e3e9f0"/>
+    <text x="510" y="505" text-anchor="middle">Basic SEO</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="80" y1="552" x2="1120" y2="552" stroke="#e3e9f0" stroke-width="1"/>
+  <text x="80" y="592" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="800" fill="#0f2748">fritt.org</text>
+  <text x="1120" y="592" text-anchor="end" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#5d6b7c">Clean, credible sites built to earn trust</text>
+</svg>
